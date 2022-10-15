@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo List App ad Goal Tracer Mock App</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <input title="menu" type="checkbox" id="ham-menu" />
+    <label for="ham-menu">
+      <div class="hide-des">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </div>
+    </label>
+    <div class="full-page-green"></div>
+    <div class="ham-menu">
+      <ul class="centre-text bold-text">
+        <li>Home</li>
+        <li>How to find your goals</li>
+        <li>Career Paths</li>
+        <li>Services</li>
+        <li>Planners and Tips</li>
+        <li>Chat with me</li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <div class="header">
+          <center>
+            <h1>Todo List App</h1>
+            <p>Goal Tracer Mock App</p>
+            <h3>
+              Welcome friend, I will assist you to become more organized in your
+              daily task
+            </h3>
+            <h4>Let's start by adding your first task</h4>
+            <p>
+              For better performance, enter the 3 most important goals that you
+              have to complete that will help you succeed
+            </p>
+            <p>
+              If nothing comes to mind, I will help you prioritize by asking you
+              a few questions. Click the link <a src="www.google.com">here</a>
+            </p>
+            <form id="addForm">
+              <input type="text" id="item" placeholder="Enter your goal" />
+              <button title="goal identification" type="submit" class="addBtn">
+                <i class="uil uil-plus"></i>
+              </button>
+            </form>
+          </center>
+        </div>
+      </div>
+      <div class="task-input">
+        <input type="text" placeholder="Add a new task" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
